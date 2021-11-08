@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "5debc953-f029-42ef-8de1-498b27b2b939": {
+      "ProjectGuid": "5debc953-f029-42ef-8de1-498b27b2b939",
+      "DisplayName": "BmpMaker",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "기타 파일",
+      "ColorIndex": -1
+    },
+    "c24bb470-cbc8-4af5-95dc-111d324b6a0e": {
+      "ProjectGuid": "c24bb470-cbc8-4af5-95dc-111d324b6a0e",
+      "DisplayName": "BmpConverter",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
