@@ -33,10 +33,19 @@ byte[] content = new byte[] {
     0x33, 0x11, 0x11, 0x11, 0x11, 0x11, 0x00, 0x00, 0x33, 0x33, 0x33, 0x33, 0x33, 0x11, 0x11, 0x11, 
     0x11, 0x11, 0x00, 0x00, 0x33, 0x33, 0x33, 0x33, 0x33, 0x11, 0x11, 0x11, 0x11, 0x11, 0x00, 0x00
 };
-random.NextBytes(color1);
 string fileName;
 for (int i = 0; i < 1000; i++)
 {
     fileName = string.Format("images/{0,4:D4}.bmp", i);
-    Console.WriteLine("<img src=\"" + fileName + "\"/>");
+    random.NextBytes(color1);
+    random.NextBytes(color2);
+    random.NextBytes(color3);
+    random.NextBytes(color4);
+    BinaryWriter writer = new BinaryWriter(File.Open(fileName, FileMode.Create));
+    writer.Write(system);
+    writer.Write(color1);
+    writer.Write(color2);
+    writer.Write(color3);
+    writer.Write(color4);
+    writer.Write(content);
 }
